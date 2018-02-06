@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>登录/注册</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="{$Think.const.BASE_URL}static/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="{$Think.const.BASE_URL}static/images/login.js"></script>
+    <link href="{$Think.const.BASE_URL}static/css/login2.css" rel="stylesheet" type="text/css" />
+    <style>
+        #u{
+            height:30px;
+            font-size:14px;
+            width:290px;
+            border-radius: 10px;
+        }
+        #p{
+            height:30px;
+            font-size:14px;
+            width:290px;
+            border-radius: 10px;
+        }
+        #switch_qlogin{
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>后台登录</h1>
+
+<div class="login" style="margin-top:50px;">
+
+
+    <div class="web_qr_login" id="web_qr_login" style="display: block; height: 235px;">
+
+        <!--登录-->
+        <div class="web_login" id="web_login">
+
+
+            <div class="login-box">
+
+
+                <div class="login_form">
+                    <form action="{:url('admin/login/save')}" name="loginform" accept-charset="utf-8" id="login_form" class="loginForm" method="post"><input type="hidden" name="did" value="0"/>
+                        <input type="hidden" name="to" value="log"/>
+                        <div class="uinArea" id="uinArea">
+                            <!--<label class="input-tips" for="u">帐号：</label>-->
+                            <div class="inputOuter" id="uArea">
+
+                                <input type="text" id="u" name="email" class="inputstyle" placeholder="请输入邮箱名"/>
+                            </div>
+                        </div>
+                        <div class="pwdArea" id="pwdArea">
+                            <!--<label class="input-tips" for="p">密码：</label> -->
+                            <div class="inputOuter" id="pArea">
+
+                                <input type="password" id="p" name="password" class="inputstyle" placeholder="请输入密码"/>
+                            </div>
+                        </div>
+
+                        <div style="padding-left:50px;margin-top:20px;"><input type="submit" value="登 录" style="width:150px;" class="button_blue"/></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <!--登录end-->
+    </div>
+</div>
+
+</body>
+</html>

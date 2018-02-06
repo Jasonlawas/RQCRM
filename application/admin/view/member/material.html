@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="__CSS__/bootstrap.min.css">
+    {include file='public/header'/}
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="x-nav">
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="javascript:location.replace(location.href);" title="刷新">
+        <i class="layui-icon" style="line-height:30px">ဂ</i></a>
+</div>
+<div style="width: 40%;margin: 0 auto;margin-top: 100px;">
+
+
+    <table class="table table-bordered">
+        <tr>
+            <td style="font-weight: bold">姓名</td>
+            <td colspan="2">{$result->u_name}</td>
+            <td style="font-weight: bold">邮箱</td>
+            <td colspan="2">{$result->u_email}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">级别</td>
+            <td colspan="2">
+                {switch name="$result->u_roles"}
+                    {case value="0"}普通用户{/case}
+                    {case value="1"}代理{/case}
+                    {case value="2"}销售{/case}
+                    {case value="3"}经理{/case}
+                    {case value="4"}总经理{/case}
+                {/switch}
+            </td>
+            <td style="font-weight: bold">性别</td>
+            <td colspan="2">
+                {switch name="$result->u_roles"}
+                    {case value="0"}男{/case}
+                    {case value="1"}女{/case}
+                    {case value="2"}保密{/case}
+                {/switch}
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">出生年月</td>
+            <td colspan="2">{$result->u_birth}</td>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">{$result->u_phone}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">国家</td>
+            <td colspan="2">{$result->u_country}</td>
+            <td style="font-weight: bold">省会</td>
+            <td colspan="2">{$result->u_province}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">城市</td>
+            <td colspan="2">{$result->u_city}</td>
+            <td style="font-weight: bold">详细地址</td>
+            <td colspan="2">{$result->u_address}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">证件号码</td>
+            <td colspan="2">{$result->u_idnumber}</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">上级代理</td>
+            <td colspan="2">{$result->agency}</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">手机</td>
+            <td colspan="2">123456789654123</td>
+            <td style="font-weight: bold">注册IP</td>
+            <td colspan="2">{$result->u_registerip}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
