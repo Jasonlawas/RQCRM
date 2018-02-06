@@ -7,8 +7,10 @@
  */
 namespace app\admin\controller;
 use app\admin\controller\Base;
-class Order extends Base {
-    function index () {
+class Order extends Base
+{
+    function index()
+    {
         return $this->fetch();
     }
 }
