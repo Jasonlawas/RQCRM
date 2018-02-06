@@ -13,4 +13,7 @@ class Order extends Base
     {
         return $this->fetch();
     }
+    function test() {
+        
+    }
 }
