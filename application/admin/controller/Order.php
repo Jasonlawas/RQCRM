@@ -11,5 +11,4 @@ class Order extends Base {
     function index () {
         return $this->fetch();
     }
-
 }
